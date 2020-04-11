@@ -1,0 +1,8 @@
+to kill all container with one command
+
+docker rm -f $(sudo docker ps -a -q)
+
+docker stop "image name"
+docker kill "id"
+docker rmi "id"
+docker rm -f "id"

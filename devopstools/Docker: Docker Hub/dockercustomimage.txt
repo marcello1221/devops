@@ -1,0 +1,6 @@
+docker commit "downloaded container long id" "give new name container"
+// u will see sha256:kahskjbcskj
+docker run -it -d "new cont-r name"
+//go insde new container
+docker exec -it "image id"
+

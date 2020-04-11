@@ -1,0 +1,30 @@
+docker install 
+sudo add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   $(lsb_release -cs) \
+   stable"
+
+official key 
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+
+verify key
+sudo apt-key fingerprint 0EBFCD88
+
+docker engine install
+sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io
+sudo apt-get update
+	check docker containers
+docker ps -a
+docker run -it -d ubuntu (will download from cloud)
+docker ps -a u will find name nad image ID
+	go inside container ubuntu
+docker exec -it -d "docker id image" bash
+if u want ADD PORT so 
+docker exec -it -p 82:80 -d "id image" bash
+
+to STOP docker 
+docker stop "id or name"
+docker kill "id or name"
+docker rm -f "id or name" FORCE kill or stop
+docker rmi "id or name"
